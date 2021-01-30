@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>测试内容</h1>
+</body>
+
+</html>
+<script>
+    //   测试1  
+    setCookie('user', 'alison')
+
+    if (getCookie('user')) {
+        alert('cookie内容'+getCookie('user'))
+    }
+
+    //写cookies
+
+    function setCookie(name, value) {
+        var Days = 30;
+        var exp = new Date();
+        exp.setTime(exp.getTime() + Days * 24 * 60 * 60 * 1000);
+        document.cookie = name + "=" + escape(value) + ";expires=" + exp.toGMTString();
+    }
+
+    //读取cookies
+    function getCookie(name) {
+        var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+
+        if (arr = document.cookie.match(reg))
+
+            return unescape(arr[2]);
+        else
+            return null;
+    }
+    // end
+
+    // 测试二
+
+    localStorage.setItem('myName', 'addddddd'),
+     alert('localstorage内容:'+localStorage.getItem('myName'))
+</script>
