@@ -1,0 +1,77 @@
+.comment-item-box{
+  display: flex;
+  align-items: flex-start;
+  background: $theme-bg-color;
+  padding: 38px 28px 5px;
+  .logo {
+    height: 59px;
+    width: 59px;
+    margin-right: 22px;
+  }
+  .right-box {
+    flex: 1;
+    .top {
+      display: flex;
+      flex-direction: column;
+      .info-box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .nick-name {  
+          font-size: 28px;
+          color: $theme-txt-color;
+        }  
+        .del-btn {
+          font-size: 23px;
+          color: $theme-txt-color1;
+          margin-right: 5px;
+        }
+      }
+      .comment-text-box {
+        margin: 20px  0;
+        position: relative;
+        font-size: 31px;
+        //max-height: 82px;
+        //overflow: hidden;
+        // text-overflow: ellipsis;
+        // -webkit-line-clamp: 2;
+        //-webkit-box-orient: vertical;
+        .comment-text { 
+          line-height: 41px; 
+          color: $theme-txt-color1;
+        }
+        .showMore {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          background: $theme-bg-color;
+          z-index: 99;
+          color: $theme-txt-color5;
+          text-align: right;
+          width: 3em;
+        }
+      }
+    }
+  }
+  .bottom{
+    display: flex;
+    justify-content: space-between;
+    .time { 
+      font-size: 23px;
+      color: $theme-txt-color3;
+    }
+    .icon{
+      display: flex;
+      align-items: center;
+      img {
+        width: 32px;
+        height: 32px;
+        margin: 12px;
+      }
+      .count {
+        font-size: 23px;
+        color: $theme-txt-color3;
+      }
+    }
+  }
+}

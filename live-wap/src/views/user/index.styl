@@ -1,0 +1,92 @@
+
+.user-page{
+  .user-header.logout{
+    padding-left: 40px;
+    padding-top: 131px;
+    .user-avatar{
+      margin-right: 28px;
+    }
+    .user-info{
+      height: 120px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 12px 0 11px;
+
+      .go-login{
+        font-size: 27px;
+        background: $theme-bg-color4-j;
+        width: 154px;
+        height: 51px;
+        line-height: 51px;
+        text-align: center;
+        border-radius: 26px;
+        color: $theme-txt-white;
+      }
+      p{
+        font-size: 26px;
+        color: $theme-txt-white;
+      }
+    }
+  }
+  .user-header.login{
+    flex-direction: column;
+    align-items: center;
+    .user-avatar{
+      margin-top: 70px;
+      position: relative;
+    }
+    .user-info{
+      margin-top: 18.59px;
+    }
+  }
+  .user-header{
+    height: 399.36px; 
+    background: url($images-base-url + 'user/grzx_bg.png') no-repeat center center / 100%;
+    .user-avatar{
+      width: 120px;
+      height: 120px;  
+      background: url($images-base-url + 'user/icon_mrtx.png') no-repeat center center / 100%;
+      .user-avatar-level-icon{
+        width: 51.28px;
+        right: 0;
+        bottom: 0;
+      }
+    }
+    .user-info{
+      .user-info-txt{
+        color: $theme-txt-white;
+        font-size: 32px;
+        font-weight: 500;
+      }
+      .user-info-coin{
+        img{
+          width: 32.05px;
+        }
+        span{
+          font-size: 23px;
+          color: $theme-txt-white;
+        }
+      }
+    }
+  }
+  .user-cell{
+      margin-top: -90px;
+      .user-cell-box{
+          width: 718px;
+          border-radius: 6px;
+          margin-bottom: 20.51px;
+          .user-cell-icon{
+            width: 43.59px;
+            margin-right: 14.1px;
+          }
+          .user-cell-right-icon{
+            width: 44.87px;
+          }
+          .van-cell__title{
+              font-size: 31px;
+              color:$theme-txt-color4;
+          }
+      }
+  }
+}

@@ -1,0 +1,230 @@
+@import "./reset.styl" 
+@import "./variables.styl"
+@import "./animation.styl"
+
+body {
+  height 100vh
+  font-family: SimHei NotoSansCJKtc-Regular, Microsoft YaHei, Arial, sans-serif;
+  background-color: $theme-bg-color2;
+} 
+
+#app {
+  height 100%  
+}
+for x in 12 13 14 15 16 18 20 22 24 25 26 28 30 32 35 36 38 40 42 45 46 48 50
+  .fs-{x}
+    font-size (x)px
+
+for x in -100 -80 -50  -44 -40 -30 -20 -10 -5 -3 -2 0 1 2 3 5 10 12 15 20 22 25 30 34 40 44 45 48 50 60 70 75 80 88 90 100 120 130 140
+  .pd-{x}
+    padding x px
+  .mg-{x}
+    margin x px
+
+  .mgt-{x}
+    margin-top x px
+  .mgb-{x}
+    margin-bottom x px
+  .mgl-{x}
+    margin-left x px
+  .mgr-{x}
+    margin-right x px
+
+  .pd-{x}
+    padding x px
+  .pdt-{x}
+    padding-top x px
+  .pdb-{x}
+    padding-bottom x px
+  .pdl-{x}
+    padding-left x px
+  .pdr-{x}
+    padding-right x px
+  
+  .pol-{x}
+    left x px
+    
+  .por-{x}
+    right x px
+  
+  .pot-{x}
+    top x px
+    
+  .pob-{x}
+    bottom x px
+  
+  .h-{x}
+    height x px
+  
+  .w-{x}
+    width x px
+
+  .lh-{x}
+    line-height x px
+    
+  .hlh-{x}
+    height x px
+    line-height x px
+
+
+.fw-b {
+  font-weight bold
+}
+
+.flex {
+  display flex
+}
+.fdr-r {
+  flex-direction row
+}
+.fdr-c {
+  flex-direction column
+}
+.fw-w {
+  flex-wrap wrap
+}
+.jc-c {
+  justify-content center
+}
+.jc-s {
+  justify-content start
+}
+.jc-e {
+  justify-content flex-end
+}
+.jc-sb {
+  justify-content space-between
+}
+.jc-sa {
+  justify-content space-around
+}
+.ai-c {
+  align-items center
+}
+.ai-fe {
+  align-items flex-end
+}
+.hide {
+  display none
+}
+.ovhide {
+  overflow hidden
+}
+.flt-r {
+  float right
+}
+.flt-l {
+  float left
+}
+.fg-1 {
+  flex-grow 1
+}
+.flex1 {
+  flex 1
+}
+.inlb {
+  display inline-block
+}  
+.va-m {
+  vertical-align middle
+}
+.va-t {
+  vertical-align top
+}
+.pos-r {
+  position relative
+}
+.pos-a {
+  position absolute
+}
+.txt-c {
+  text-align center
+}
+.txt-l {
+  text-align left
+}
+.txt-r {
+  text-align right
+}
+
+.w100 {
+  width 100%
+}
+
+.h100 {
+  height 100%
+}
+
+.nobd {
+  border none
+}
+
+.l-cir {
+  position relative
+  leftCircle()
+  &::before {
+    leftCircle()
+    cntEl()
+    transform-origin left top
+    left 0
+  }
+}
+.r-cir {
+  rightCircle()
+  position relative
+  &::before {
+    rightCircle()
+    cntEl()
+    transform-origin right top
+    right 0
+  }
+}
+.pos-center
+  position absolute
+  top 50%
+  left 50%
+  transform translate3d(-50%, -50%, 0)
+
+.crs-p {
+  cursor pointer
+}
+
+.icon-triangle {
+  width 20px
+  height 20px
+  display inline-block
+  align-items center
+  justify-content center
+  iconTran() {
+    display inline-block
+    content ''
+    border-left solid 12px transparent
+    border-right solid 12px transparent
+  }
+  &.up::after {
+    iconTran()
+    border-bottom solid 12px currentColor
+  }
+  &.down::after {
+    iconTran()
+    border-top solid 12px currentColor
+  }
+}
+
+.clear {
+  &::after {
+    content ''
+    clear both
+    display block
+  }
+}
+
+.txt-ellipsis {
+  text-overflow ellipsis
+  overflow hidden
+  word-break keep-all
+}
+
+.pd-top-13{
+  padding-top: 13px;  
+}

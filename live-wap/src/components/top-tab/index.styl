@@ -1,0 +1,68 @@
+
+  .top-tab-box {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background: #fff;
+    .parent-tab-box {
+      background-color: $theme-bg-color;
+      padding-bottom: 19px;
+      .parent-tabs {
+        .van-tab {
+          font-size: 27px;
+          color: $theme-txt-color1;
+          text-align: center;
+        }
+        .van-tab--active {
+          font-size: 38px;
+        }
+        .van-tabs__line {
+          width: 19px;
+          height: 8px;
+          background: linear-gradient(82deg, #FF7835, #F09246);
+          border-radius: 4px;
+        }
+      }
+    }
+    .child-tab-box {
+      background-color: $theme-bg-color2;
+      .child-tabs {
+        .van-tabs__wrap {
+          height: auto;
+          padding-top: 17px;
+          padding-bottom: 21px;
+          padding-left: 20px;
+          .van-tabs__nav{
+            background-color: $theme-bg-color2;
+          }
+          .van-tabs__nav--complete {
+            padding-left: 20px;
+            padding-right: 20px;  
+          }
+          .van-tabs__nav--card {
+            border: none;
+            height: 47px;
+            margin: 0;
+            .van-tab {
+              margin-right: 40px;
+              flex: none;
+              background-color: $theme-bg-color2; 
+              font-size: 23px;
+              color: $c-theme-txt-color3;
+              height: 47px;
+              line-height: 47px;        
+              border-radius: 23px;
+              border: 1px solid $theme-bg-color2;;
+              padding: 0 19px;
+            }
+            .van-tab--active {
+              background: $theme-bg-color2;
+              color: $c-theme-txt-color4;
+              border: 1px solid $theme-bd-color3;
+            }
+          }
+        }
+      }
+    }
+  }

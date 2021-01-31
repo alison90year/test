@@ -1,0 +1,83 @@
+/* 默认布局样式 */
+$layout = 'default'
+
+$layout-path = 'styles/layout/' + $layout
+
+
+#app{
+  .van-popup--bottom.van-popup--round{
+    border-radius: 0;  
+  }
+  .van-action-sheet__gap,.van-overlay{
+    background-color: rgba(0,0,0,.3);
+  }
+  .van-action-sheet__name,.van-action-sheet__cancel{
+    font-size: 36px;
+    color: $theme-txt-color;
+  } 
+}
+
+// 确认框通用样式
+
+.van-dialog{
+  width: 487px;
+  border-radius: 26px;
+  .van-dialog__header{
+    color: $theme-txt-color;
+    font-size: 32px;
+    padding: 39px 29px 19px;
+  }
+  .van-dialog__message{
+    padding: 21px 29px 26px;
+  }
+  .van-dialog__footer{
+    justify-content: space-around;
+    border: 0;
+    padding:0 29px 41px;
+  }
+  .van-button{
+    width: 176px;
+    height: 69px;
+    border: 3px solid $theme-bd-color3;
+    border-radius: 33px;
+    flex: none;
+    font-size: 29px;
+  }  
+  .van-hairline--top::after{
+    border: 0;  
+  }
+  .van-dialog__confirm{
+    background: $theme-bg-color3;
+    color: $theme-txt-white;
+  }
+  .van-dialog__cancel{
+    color: $c-theme-txt-color4;
+  }
+}
+
+#canvasBarrage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    z-index: 1;
+}
+
+#player { 
+  background: #000000;
+  .xgplayer-start {
+    display: none;
+  }
+}
+
+
+.posre {
+    position: relative;
+}
+
+.wh100 {
+    width: 100%;
+    height: 100%;
+}
+

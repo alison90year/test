@@ -1,0 +1,62 @@
+.hot-video-item {
+  display: flex;
+  margin-top: 35px;
+  .left {
+    width: 300px;
+    height: 170px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-right: 13px;
+    .time {
+      height: 32px;
+      width: 79px;
+      background-color: $theme-bg-color3;
+      opacity: 0.3;
+      border-radius: 4px;
+      text-align: center;
+      line-height: 32px;
+      color: $theme-txt-white;   
+      font-family: Microsoft YaHei;
+      font-size: 17px;
+      margin-right: 8px;
+      margin-bottom: 6px;
+    }
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .title {
+      font-size: 29px;
+      font-family: Noto Sans S Chinese;
+      font-weight: normal;
+      color: $theme-txt-color1;
+      line-height: 42px;
+    }
+    .icon {
+      margin-bottom: 19px;
+      margin-top: 23px;
+      display: flex;
+      align-items: center;
+      .icon-box {
+        font-size: 17px;
+        color: $theme-txt-color1;
+        img {
+          width: 19px;
+          height 19px;
+          vertical-align: middle;
+          margin-right: 5px;
+        }
+        span {
+          margin-right:14px;
+        }
+      }
+    }
+    .name {   
+      font-size: 23px;
+      color: $theme-txt-color6;
+      line-height: 42px;
+    }
+  }  
+}

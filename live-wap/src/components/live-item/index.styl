@@ -1,0 +1,81 @@
+.live-item-componet {
+  overflow: hidden;
+  display: inline-block;
+  width: 370px;
+  position: relative;
+  background: $theme-bg-color;
+  .liev-item-box {
+    background-color: $c-theme-txt-color2;
+    height: 204px;
+    display: flex;
+    align-items: flex-end;
+    .live-bottom-info {
+      flex: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      font-size: 19px;
+      font-family: Microsoft YaHei;
+      color: $theme-txt-white;
+      padding-left: 13px;
+      padding-right: 6px; 
+      .live-bottom-name {    
+        flex: 1;
+        margin-right: 10px;
+        overflow:hidden; //超出的文本隐藏
+        text-overflow:ellipsis; //溢出用省略号显示
+        white-space:nowrap; //溢出不换行
+      }
+      .live-bottom-hot {
+        display: flex;
+        align-items: center;
+        img {
+          width: 21px;
+          height: 21px;
+          margin-right: 5px;
+        }  
+      }
+      .info-box {
+        display: flex;
+        align-items: center;
+       .live-bottom-count {
+          display: flex;
+          align-items: center;
+          img {
+            width: 21px;
+            height: 21px;
+            margin-right: 5px;
+            vertical-align: middle;
+          }  
+        }
+        .live-bottom-comments {
+          margin-left: 13px;
+          display: flex;
+          align-items: center;
+          img {
+            width: 21px;
+            height: 21px;
+            margin-right: 5px;
+            vertical-align: middle;
+          }  
+        }
+      }
+    }
+  }
+  .liev-item-title{
+    min-height: 35px;
+    padding: 17px 0 20px 15px;
+    font-size: 26px;
+    font-family: Microsoft YaHei;
+    color: $theme-txt-color1;
+    box-sizing: content-box;
+    overflow:hidden; //超出的文本隐藏
+    text-overflow:ellipsis; //溢出用省略号显示
+    white-space:nowrap; //溢出不换行
+  }
+}
+
+.left-live {
+  margin-right: 10px;
+}

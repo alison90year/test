@@ -1,0 +1,56 @@
+.transactions-page{
+  height:100vh;
+  .transactions-page-container{
+    padding: 13px 31px; 
+    .van-cell{
+      align-items: center;
+      padding: 23px 35px 12px;
+      border-radius: 6px;
+      margin-bottom: 13px;
+      .tasks-icon{
+        width: 47px;
+        height: 47px;
+        margin-right: 28px;
+      }
+      .van-cell__title{
+        span{
+          font-size: 26px;
+          font-weight: 500;
+          color: $theme-txt-color1;
+        }
+        .van-cell__label{
+          font-size: 22px;
+          color: $theme-txt-color7;
+        }
+      }
+      .van-cell__value{
+        p{
+          font-size: 19px;
+          color: $theme-txt-color6;
+        }
+        .van-button{
+          padding: 19px 25px;
+          height: auto;
+          min-width: 121px;
+          .van-button__content{
+            font-size: 24px;
+            line-height: 24px;
+          }
+        }
+        .van-button--disabled{
+          opacity: 1;  
+        }
+        .do-tasks{
+          background: $theme-bg-color2;
+          color: $theme-txt-color8-j;
+          border-color: $theme-bg-color2;
+        }
+        .get-exp{
+          background: $theme-bg-color3;
+          color:$theme-txt-white;
+          border-color: $theme-bd-color3;
+        }
+      }
+    }
+  }
+}

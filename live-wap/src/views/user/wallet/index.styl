@@ -1,0 +1,109 @@
+.wallet-page{
+  height:100vh;
+  .wallet-header-right-button{
+    font-size: 27px;
+    color: $theme-txt-color1;
+  }
+  .wallet-page-container{
+    flex: 1;
+    .wallet-page-tabs{
+      .van-tab{
+        font-size: 29px;
+        color: $theme-txt-color1;
+        flex: 0.15;
+      }
+      .van-tabs__nav{
+        background: $theme-bg-color2;
+      }
+      .van-tabs__line {
+        width: 19px;
+        height: 8px;
+        background: linear-gradient(82deg, #FF7835, #F09246);
+        border-radius: 4px;
+      }
+      .van-tab--active{
+        font-size: 40px;
+        font-weight: 500;
+      }
+      .van-tabs__content{
+        flex: 1;  
+      }
+    }
+
+    .wallet-top-up-box{
+      .wallet-balance{
+        background: $theme-bg-color;
+        font-size: 32px;
+        color: $theme-txt-color;
+        padding: 38px;
+        margin-bottom: 19px;
+      }
+      .wallet-top-up{
+        padding: 29px 38px 78px; 
+        background: $theme-bg-color;
+        .wallet-top-up-title{
+          color: $theme-txt-color;
+          font-size: 32px;
+          font-weight: 500;
+        }
+      } 
+      
+      .wallet-top-up-amount{
+          margin: 41px 0 59px 0;
+          .amount-item{
+            width: 329px;
+            height: 81px;
+            border: 3px solid $theme-bd-color2;
+            border-radius: 6px;
+            padding:0 20px;
+            line-height: 81px;
+            color: $theme-txt-color6;
+            font-size: 29px;
+            transition: all 0.2s;
+          }
+          .amount-item-input{
+            overflow: hidden;
+            input{
+              flex: 1;
+              border: 0;
+              width: 1px;
+            }
+            .right-coin{
+ 
+            }
+          }
+          .amount-item:nth-child(n+3){
+            margin-top: 17px;   
+          }
+          .amount-item.active{
+            color: $theme-txt-color5;
+            border-color: $theme-bg-color3;
+          }
+      } 
+    }
+    .withdraw-box{
+      background: $theme-bg-color;
+      padding: 59px 54px 65px;
+      p{
+        color: $theme-txt-color;
+        font-size: 32px;
+        margin-bottom: 44px;
+      }
+      p:nth-child(3){
+        margin-bottom: 66px;
+      }
+    }
+
+    .van-button--round{
+      border-radius: 42px;
+    }
+    .van-button{
+      height: 83px; 
+      width: 590px;
+      background: $theme-bg-color3;
+      border-color: $theme-bg-color3;
+      color: $theme-txt-white;
+      font-size: 38px;
+    }
+  }  
+}

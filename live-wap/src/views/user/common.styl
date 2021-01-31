@@ -1,0 +1,104 @@
+.van-cell.base-cell{
+  padding-top:7.05px;
+  padding-bottom:5.77px;
+  .van-cell__title,.van-cell__value{
+    color: $theme-txt-color;
+    line-height:92.31px;
+  }
+  .van-cell__title{
+    font-size: 32px;
+  }
+  .van-cell__value{
+    font-size: 26px;
+  }
+  .info-cell-right-icon{
+    width: 44.87px;
+    height: 44.87px;
+    vertical-align: middle;
+  }
+}
+
+.form-container{
+  padding: 37px 77px 0;
+  .van-cell{
+    height: 88px;
+    border-color:$j-theme-bd-color1;
+    border-style: solid;
+    border-radius: 6px;
+    border-width: 2px;
+    background: transparent;
+    color: $j-theme-txt-color1;
+    font-size: 32px;
+    margin-bottom: 41px;
+    padding: 0 8px 0 31px;
+    display: flex; 
+    align-items: center;
+    .van-field__value{
+      display: flex; 
+      align-items: center; 
+    }
+    .van-cell__right-icon{
+      margin-right: 29px;
+      color: $j-theme-txt-color1;
+    }
+    .van-cell__title{
+      display: flex; 
+      align-items: center; 
+      white-space:nowrap;
+      text-overflow:ellipsis;
+      overflow:hidden;
+    }
+    ::placeholder{
+      color: $j-theme-txt-color1;
+    }
+    .van-field__left-icon{
+      display: flex;
+      align-items: center;
+      .phone-left-arrow{
+        width 29px
+        height 29px
+        margin 0 10px
+      }
+    }
+    .van-field__body{
+      flex: 1; 
+    }
+    .van-button{
+      height: 77px;
+      min-width: 130px;
+      background: $theme-bg-color3;
+      border-radius: 6px;
+      color: $theme-txt-white;
+      font-size: 32px;
+      border: 0;
+      transition: 0.2s ease;
+    }
+    .van-button.van-button--disabled{
+      background: $c-theme-bg-color3;  
+    }
+    .van-count-down{
+      color:$theme-txt-white;
+      font-size: 32px;
+    }
+  }
+  .van-cell:hover{
+    border-color:$theme-bd-color3;
+    .van-cell__right-icon{
+      margin-right: 29px;
+      color:$c-theme-txt-color4;
+    }
+  }
+  .van-field--disabled:hover{
+    border-color: $j-theme-bd-color1;
+  }
+  .submit-button{
+    width: 590px;
+    height: 83px;
+    background: $c-theme-txt-color4;
+    font-size: 38px;
+    color:$theme-txt-white;
+  }
+  .van-button--disabled{
+    background: $j-theme-bg-color4;
+  }  
+}
